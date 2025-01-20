@@ -33,7 +33,7 @@ export default function Left() {
           className="left__header__img"
         />
         <h3 className="left__header__title">
-          What is your cat's current mood?
+          What is your cat&#39;s current mood?
         </h3>
       </header>
 

@@ -1,9 +1,9 @@
 type HistoryType = {
-  icon: any;
   name: string;
   color: string;
   createdAt: string;
   description: string;
+  icon: ReturnType<typeof require>;
 };
 
 type HistoryContextType = {

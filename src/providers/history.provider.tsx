@@ -3,7 +3,7 @@ import React from "react";
 
 const HistoryContext = React.createContext<HistoryContextType>({
   history: [],
-  addEntry: (entry) => {},
+  addEntry: () => {},
 });
 
 export function useHistoryContext() {

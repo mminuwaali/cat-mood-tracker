@@ -1,0 +1,117 @@
+.right {
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  overflow: auto;
+  flex: 1 0 20em;
+  border-radius: 1em;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    margin-bottom: 2em;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+      gap: 1em;
+      color: #333;
+      display: flex;
+      align-items: center;
+      font-size: clamp(1.5em, 2vw, 3em);
+
+      &__image {
+        object-fit: contain;
+        width: clamp(1.6em, 5vw, 4em);
+        height: clamp(1.6em, 5vw, 4em);
+      }
+
+      &__content {
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+
+        sup {
+          font-size: 0.5em;
+          margin-left: 0.2em;
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    &__description {
+      color: #b4b4b4;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: clamp(1.2em, 2vw, 4em);
+    }
+  }
+
+  &__list {
+    gap: 1em;
+    flex: 1 auto;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    padding-right: 0.2em;
+    flex-direction: column;
+
+    &__card {
+      gap: 1em;
+      display: flex;
+      padding: 2em 1em;
+      border: 2px solid;
+      position: relative;
+      border-radius: 0.8em;
+      background-color: #fff;
+      transition: border-color 0.3s ease;
+      box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
+
+      &__icon {
+        width: 4em;
+        height: 4em;
+        padding: 0.5em;
+        border: 2px solid;
+        border-radius: 50%;
+        transition: border-color 0.3s ease;
+
+        &__image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      &__details {
+        flex: 1;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__description {
+          color: #333;
+          font-size: 1.2em;
+          font-weight: bold;
+          margin-bottom: 0.5em;
+        }
+
+        &__datetime {
+          color: #666;
+          font-size: 0.9em;
+        }
+      }
+
+      &__bg {
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+        opacity: 0.4;
+        position: absolute;
+        object-fit: contain;
+      }
+    }
+  }
+}
